@@ -1,0 +1,85 @@
+.container-habilidade, .container-habilidade {
+    font-family: var(--font-primaria);
+    padding-bottom: 10em; 
+}
+
+.titulo-habilidades {
+    font-size: 50px;
+    color: var(--header-txt);
+    font-weight: 700;
+    text-align: center;
+    margin: 4em 0 1.5em 0;
+}
+
+.container-card-habilidade1, .container-card-habilidade2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 2em;
+    gap: 6em; 
+    flex-wrap: wrap; 
+}
+
+.card-habilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    max-width: 330px; 
+    height: 280px;
+    background-color: hsl(216, 35%, 11%);
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 10px 0px var(--primary-txt); 
+    border-radius: 40px;
+}
+
+.nome-projeto-habilidade, .paragrafo-habilidade, .link-habilidade {
+    text-align: center;
+}
+
+.nome-projeto-habilidade {
+    font-size: calc(1rem + 1vw);
+    font-weight: 700;
+    margin: 0.3em 0;
+    color: var(--primary-txt);
+}
+
+.paragrafo-habilidade {
+    color: var(--header-txt);
+    font-size: calc(0.5rem + 0.5vw); 
+    font-weight: 700;
+}
+
+@media screen and (max-width: 888px) {
+    .container-card-habilidade1, .container-card-habilidade2 {
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .titulo-habilidades {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .titulo-habilidades {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .imagem-habilidade{
+        width: 170px;
+    }
+    .titulo-habilidades {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .titulo-habilidades {
+        font-size: px;
+    }
+}

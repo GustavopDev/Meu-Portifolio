@@ -1,0 +1,14 @@
+:root{
+    --cor-preta: black;
+    --cor-azul-degrade: linear-gradient (100deg, #060962 %, #04052E 100%, #060962 100%);
+    --font-primaria: "Oswald";
+    --header-txt: hsl(226, 70%, 88%);
+    --primary-txt: hsl(225, 20%, 61%);
+    --main-bg: hsl(216, 65%, 11%);
+    --cta: hsl(166, 100%, 70%);
+}
+
+body{
+    background-color: var(--main-bg);
+    color: white;
+}

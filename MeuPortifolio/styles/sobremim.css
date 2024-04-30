@@ -1,0 +1,186 @@
+.sobremim{
+    padding: 2em 0;
+    font-family: var(--font-primaria);
+    background-color: hsl(216, 20%, 11%);
+}
+
+.container-sobremim{
+    margin: 0;
+}
+
+.titulo-container{
+    font-size: 2vw; 
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--header-txt);
+}
+
+.card-sobremim{
+    display: flex;
+    justify-content: space-around; 
+    padding: 0 20vw; 
+}
+
+.descricao-sobremim{
+    margin: 0 1vw;
+    padding: 1vw;
+}
+
+.descricao-sobremim p {
+    font-size: 15px; 
+    font-weight: 700;
+    color: var(--primary-txt);
+    padding: 1vw; 
+}
+
+.descricao-sobremim i{
+    color: var(--header-txt);
+}
+
+.descricao-sobremim .meu-curriculo{
+    justify-content: center;
+}
+
+.imagem-sobremim{
+    margin: auto;
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.imagem-sobremim img{
+    border-radius: 100%;
+    width: 100%; 
+    height: auto;
+}
+
+.meu-curriculo{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.botao a {
+    text-decoration: none;
+    color: var(--cta);
+}
+
+.botao{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--cta);
+    border-radius: 10px;
+    font-size: 1.5vw; 
+    color: var(--cta);
+    font-weight: 700;
+    padding: 0.7vw 1.5vw; 
+    position: relative;
+    overflow: hidden;
+}
+
+.botao:hover .botao-sobremim{
+    color: hsl(216, 20%, 11%);
+    transform: scale(1.1);
+}
+
+.botao::before{
+    content: "";
+    width: 222px;
+    height: 57px;
+    border-radius: 10px;
+    position: absolute;
+    left: -203px;
+    top: 103%;
+    background-color: var(--cta);
+}
+
+.botao:hover::before{
+    animation: desloca .5s;
+    left: 0;
+    top: 0;
+}
+
+@keyframes desloca {
+    0%{
+        left: 100%;
+        top: 0%;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+
+@media screen and (max-width: 1176px) {
+    .card-sobremim{
+        display: block;
+    }
+
+    .imagem-sobremim{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem-sobremim img{
+        width: 400px;
+    }
+
+    .descricao-sobremim p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    .imagem-sobremim img{
+        width: 250px;
+    }
+
+    .titulo-container{
+        font-size: 40px;
+    }
+
+    .descricao-sobremim{
+    margin: 0;
+    padding: 0;
+    }
+
+    .meu-curriculo{
+        margin-top: 1em;
+    }
+
+    .botao-sobremim{
+        width: 150px;
+        font-size: 23px;
+    }
+    .descricao-sobremim p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .descricao-sobremim p {
+        font-size: 12px;
+    }
+
+    .botao-sobremi{
+        font-size: 20px;
+    }
+    .imagem-sobremim img{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .imagem-sobremim img{
+        width: 210px;
+    }
+
+    .titulo-container{
+        font-size: 36px;
+    }
+    .descricao-sobremim p {
+        font-size: 10px;
+    }
+}
